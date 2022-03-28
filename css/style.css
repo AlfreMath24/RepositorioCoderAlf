@@ -199,3 +199,20 @@ body{
 		grid-template-areas: "nav nav" "main main" "main main" "footer footer";
 	}
 }
+
+.gradiente{
+	background: linear-gradient(to top, #ffffff, #f2c48d);
+}
+
+.gradiente-produc{
+	background: linear-gradient(to top, #ffffff, #95a68a);
+}
+
+.gradiente-contacto{
+	background: linear-gradient(to bottom, #ffffff, #95a68a) ;
+}
+
+.escalar:hover{
+	transform: scale(0.8);
+	cursor: pointer;
+}

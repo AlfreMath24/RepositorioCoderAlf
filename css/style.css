@@ -216,3 +216,18 @@ body{
 	transform: scale(0.8);
 	cursor: pointer;
 }
+
+.div1:hover{	
+	transform: scale(1.3);
+	cursor: pointer;
+}
+
+.div2:hover{
+	transform: scale(1.3);
+	cursor: pointer;
+}
+
+.div3:hover{
+	transform: scale(1.3);
+	cursor: pointer;
+}

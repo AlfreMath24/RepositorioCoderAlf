@@ -4,6 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hona Shop</title>
+	  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hona Shop</title>
+  </head>
+  <body>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
 	<link rel="stylesheet" href="../css/style.css">
 	
 </head>
@@ -24,7 +36,16 @@
 	</div>
 	<div class="item-3">
 		<header>
-			<img class="img1" src="../img/main.jpg" alt="Productos de Calidad para el Hogar" width="100%">
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="../img/main.jpg" class="d-block w-100" alt="manteles">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="../img/Packpaoel.jpg" class="d-block w-100" alt="manteles2">
+			    </div>
+			  </div>
+			</div>
 		</header>
 	</div>
 	</nav>
@@ -32,20 +53,31 @@
 		<h1 class="textcenter titulo__producto--md">Productos</h1>
 
 		<div class="contenedor">
-			<div class="div1">
-				<img class="producto__img1--md" src="../img/platosdesitio.jpg" alt="platos de sitio">
-				<article class="producto__platos--md" class="titulo">Platos de Sitio</article>
+			
+			<div class="card" style="width: 18rem;">
+			  <img src="../img/platosdesitio.jpg" class="card-img-top" alt="platos de sitio">
+			  <div class="card-body">
+			    <h5 class="card-title">Platos de Sitio</h5>
+			    <a href="#" class="btn btn-primary">Ver Productos</a>
+			  </div>
 			</div>
 
-			<div class="div2" >
-				<img class="producto__img2--md" src="../img/manteles.jpg" alt="manteles">
-				<article class="producto__manteles--md" class="titulo">Manteles</article>
+			<div class="card" style="width: 18rem;">
+			  <img src="../img/manteles.jpg" class="card-img-top" alt="manteles">
+			  <div class="card-body">
+			    <h5 class="card-title">Manteles</h5>
+			    <a href="#" class="btn btn-primary">Ver Productos</a>
+			  </div>
 			</div>
 
-			<div class="div3">
-				<img class="producto__img3--md" src="../img/servilletas.jpg" alt="servilletas">
-				<article class="producto__servilletas--md" class="titulo">Servilletas</article>
+			<div class="card" style="width: 18rem;">
+			  <img src="../img/servilletas.jpg" class="card-img-top" alt="servilletas">
+			  <div class="card-body">
+			    <h5 class="card-title">Servilletas</h5>
+			    <a href="#" class="btn btn-primary">Ver Productos</a>
+			  </div>
 			</div>
+
 		</div>
 	</main>
 	<footer class="pie">

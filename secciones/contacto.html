@@ -53,14 +53,19 @@
 		<section>
 			<article class="contacto__articulo">
 				<h1 class="textcenter contacto__articulo--xl">Contacto</h1>
-				<div class="mb-3">
-				  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-				  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-				</div>
-				<div class="mb-3">
-				  <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
-				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-				</div>
+				<form action="" id="contacto">
+					<label for="nombre">Nombre Completo</label>
+					<input type="text" placeholder="Nombre y Apellido" name="nombre" id="nombre">
+					<br><br>
+					<label for="mail">E-mail</label>
+					<input type="text" placeholder="@mail.com" name="mail" id="mail">
+					<br><br>
+					<label for="mensaje">Dejanos tu mensaje</label>
+					<br>
+					<textarea name="consulta" id="mensaje" cols="30" rows="10"></textarea>
+					<br><br>
+					<input type="submit" value="Enviar">
+				</form>
 			</article>
 		</section>
 	</main>

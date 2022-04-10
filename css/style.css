@@ -232,7 +232,7 @@ body{
 	cursor: pointer;
 }
 
-h5{
+h2{
 	padding: 0;
 	margin: 0;
 	font-family: arial, sans-serif;
@@ -253,4 +253,40 @@ button{
 
 .footer-1 .footer-2{
 	justify-items: center;
+}
+
+.formulario{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 20px;
+	padding: 20px;
+}
+
+.nombre{
+	margin: 10px;
+	padding: 10px;
+}
+
+.mail{
+	margin: 10px;
+	padding: 10px;
+}
+
+.mensaje{
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding: 10px;
+}
+
+.boton{
+	display: flex;
+	justify-content: center;
+}
+
+.final{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }

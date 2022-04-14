@@ -1,0 +1,44 @@
+nav{
+	.barra{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center; 
+		.item-1{
+			padding: 10px 0px;
+		}
+	}
+}
+
+nav{
+	background-color: $mainColor;
+	background: linear-gradient(to top, transparent, $mainColor);
+	padding: 10px 15px;
+	ul{
+		list-style: none;
+		display: inline-block;
+		li{
+			font-size:$textsm;
+			display: inline-block;
+			margin-right: 20px;
+			a{
+				text-decoration: none;
+				color: black;
+				font-family: $fontMain;
+				&:hover{
+					font-weight: 600;
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+nav{
+	header{
+		width: $w-100;
+		img{
+			height: 450px;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+$mainColor: rgba(242,196,141,1.0);
+$secondColor: rgba(109,130,63,0.7);
+$backgroundColor: rgba(149,166,138,0.5);
+$borderColor: rgba(145,95,44,0.7);
+
+$w-25: 25%;
+$w-50: 50%;
+$w-75: 75%;
+$w-100: 100%;
+
+@mixin titulo($font-size,$font-family,$text-align){
+	font-size: $textlg;
+	font-family: $fontMain;
+	text-align: center;
+	font-weight: 600;
+	padding-top: 15px;
+}
+
+@mixin parrafo($font-size,$font-family,$text-align){
+	font-size: $textsm;
+	font-family: $fontMain;
+	text-align: center;
+	padding: 10px;
+}
+
+@mixin shadow(){
+	box-shadow: rgba(0, 0, 0, 1.0);
+}
+
+$paleta:(
+	'uno': rgba(149,166,138,1.0),
+    'dos': rgba(109,130,63,1.0),
+    'tres': rgba(242,196,141,1.0),
+    'cuatro': rgba(215,157,89,1.0),
+    'cinco': rgba(145,95,44,1.0),
+    'seis': rgba(0,0,0,1.0),
+	);
+
+

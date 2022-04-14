@@ -1,0 +1,14 @@
+
+.nosotros{
+	p{
+		text-align: center;
+		font-family: $fontMain;
+		font-size: $textmd;
+		border-style: ridge;
+		border-color: map-get($map:$paleta,$key:'cuatro');
+		border-width: 15px;
+		padding: 30px;
+		justify-content: space-around;
+	}
+	
+}

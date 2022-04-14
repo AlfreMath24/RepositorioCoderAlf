@@ -1,0 +1,33 @@
+main{
+	background-color: $secondColor;
+	h1{
+		@include titulo($textlg,$fontMain,center);
+		padding-top: 15px;
+		text-align: center;
+	}
+}
+
+main{
+	p{
+		@include parrafo($textsm,$fontMain,center);
+		padding: 10px;
+	}
+}
+
+main{
+	.promociones{
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+		img{
+			height: 500px;
+			border-style: ridge;
+			border-color: map-get($map:$paleta,$key:'cuatro');
+			border-width: 20px;
+			&:hover{
+				transform: scale(0.8);
+				cursor: pointer;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+main{
+	background-color: $secondColor;
+	h1{
+		font-family: $fontMain;	
+		font-size: $textlg;
+		font-weight: 600;
+		text-align: center;
+	}
+}
+
+main{
+	.producto-prin{
+		padding: 10px;
+		text-align: center;
+		font-family: $fontMain;	
+		font-size: $textsm;
+	}
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 20px;
+	h2{
+		font-size: $textmd;
+		font-family: $fontMain;
+		text-align: center;
+		padding: 10px;
+	}
+}
+
+.contenedor{
+	a{
+		display: flex;
+		justify-content: center;
+		background-color: map-get($map:$paleta,$key:'tres');
+		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+		border: none;
+		color: black;
+		&:hover{
+			background-color: map-get($map:$paleta,$key:'cuatro');
+		}
+	}
+}
+

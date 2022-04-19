@@ -1,11 +1,9 @@
-main{
-	background-color: $secondColor;
-	padding: 10px, 0px;
+.contacto{
+	background-color: map-get($map:$paleta,$key:'uno');
 	h1{
 		@include titulo($textlg,$fontMain,center);
 	}
 }
-
 
 .formulario{
 	display: flex;

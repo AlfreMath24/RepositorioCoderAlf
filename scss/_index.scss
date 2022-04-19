@@ -1,5 +1,8 @@
 main{
 	background-color: $secondColor;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 20px;
 	h1{
 		@include titulo($textlg,$fontMain,center);
 	}
@@ -10,11 +13,8 @@ main{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 20px;
-	padding: 20px;
 		.nombre{
 			margin: 10px;
-			padding: 10px;
 			font-family: $fontMain;
 			font-size: $textsm;
 		}
@@ -49,7 +49,13 @@ main{
 			color: black;
 			&:hover{
 				background-color: map-get($map:$paleta,$key:'cuatro');
+				color: white;
 			}
 		}
 	}
+}
+
+form{
+	margin-right: 100px;
+	margin-left: 100px;
 }

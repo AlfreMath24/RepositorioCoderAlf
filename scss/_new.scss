@@ -31,3 +31,61 @@ main{
 		}
 	}
 }
+
+main{
+	.promociones{
+		img{
+			@media (max-width: 992px){
+				height: 300px;
+				border: none;
+				padding: auto;
+				border-style: ridge;
+				border-color: map-get($map:$paleta,$key:'cuatro');
+				border-width: 10px	
+			}
+		}
+	}
+}
+
+main{
+	.promociones{
+		img{
+			@media (max-width: 768px){
+				height: 300px;
+				border: none;
+				padding: auto;	
+			}
+		}
+	}
+}
+
+main{
+	.promociones{
+		img{
+			@media (max-width: 576px){
+				height: 200px;
+				border: none;
+				padding: auto;	
+			}
+		}
+	}
+}
+
+main{
+	.promociones{
+		img{
+			@media (max-width: 320px){
+				height: 120px;
+				border: none;
+				padding: 0;	
+			}
+		}
+	}
+}
+
+main{
+	@media (max-width: 320px){
+		margin-right: 0;
+		margin-left: 0;
+	}
+}

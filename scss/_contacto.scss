@@ -53,3 +53,23 @@
 	}
 }
 
+.contacto{
+	@media (max-width: 320px){
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+form{
+	@media (max-width: 320px){
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+form{
+	@media (max-width: 576px){
+		margin-right: 0;
+		margin-left: 0;
+	}
+}

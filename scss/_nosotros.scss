@@ -1,6 +1,5 @@
 
 .nosotros{
-	margin-bottom: 20px;
 	p{
 		text-align: center;
 		font-family: $fontMain;
@@ -12,5 +11,57 @@
 		justify-content: space-around;
 		margin-right: 200px;
 		margin-left: 200px;
+	}
+}
+
+.us{
+	padding-bottom: 10px;
+}
+
+.nosotros{
+	p{
+		@media (max-width: 992px){
+			text-align: center;
+			font-family: $fontMain;
+			font-size: $textmd;
+			border-style: ridge;
+			border-color: map-get($map:$paleta,$key:'cuatro');
+			border-width: 15px;
+			padding: 30px;
+			justify-content: space-around;
+			margin-right: 100px;
+			margin-left: 100px;
+		}
+	}
+}
+
+.nosotros{
+	p{
+		@media (max-width: 576px){
+			text-align: center;
+			font-family: $fontMain;
+			font-size: $textsm;
+			padding: 30px;
+			justify-content: space-around;
+			margin-right: 50px;
+			margin-left: 50px;
+		}
+	}
+}
+
+.nosotros{
+	p{
+		@media (max-width: 320px){
+			font-family: $fontMain;
+			font-size: $textsm;
+			margin: 10px;
+			padding: 10px;
+		}
+	}
+}
+.us{
+	@media (max-width: 576px){
+		margin-right: 0;
+		margin-left: 0;
 	}
 }

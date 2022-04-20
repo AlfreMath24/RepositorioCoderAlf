@@ -9,6 +9,64 @@ main{
 }
 
 main{
+	.contenedor{
+		.card{
+			width: 20rem;
+			@media (max-width: 992px){
+				width: 15rem;
+				h2{
+					font-size: $textsm;
+				}
+			}
+		}
+	}
+}
+
+main{
+	margin-right: 0;
+	margin-left: 0;
+	.contenedor{
+		.card{
+			@media (max-width: 768px){
+				width: 10rem;
+			}
+		}
+	}
+}
+
+main{
+	.contenedor{
+		.card{
+			@media (max-width: 576px){
+				width: 10rem;
+			}
+		}
+	}
+}
+
+main{
+	.contenedor{
+		.card{
+			@media (max-width: 320px){
+				width: 15rem;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+
+main{
+	.contenedor{
+		@media (max-width: 320px){
+			display: flex;
+			flex-direction: column;
+			align-items: center;		
+		}
+	}
+}
+
+main{
 	.producto-prin{
 		padding: 10px;
 		text-align: center;
@@ -22,10 +80,6 @@ main{
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 20px;
-	@media (min-width: 768xp){
-		display: flex;
-		flex-direction: column;
-	}
 }
 
 .contenedor{
@@ -51,9 +105,9 @@ main{
 	}
 }
 
-	
-.contenedor{
-	@media (min-width: 768xp){
-		flex-direction: column;
+.principal{
+	@media (max-width: 992px){
+		margin-right: 0;
+		margin-left: 0;
 	}
 }

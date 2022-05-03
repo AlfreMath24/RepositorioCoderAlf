@@ -320,12 +320,15 @@ main .promociones {
 .formulario .boton {
   display: flex;
   justify-content: center; }
-  .formulario .boton button {
+  .formulario .boton .enviar {
     background-color: #f2c48d;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
     border: none;
-    color: black; }
-    .formulario .boton button:hover {
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    padding: 10px; }
+    .formulario .boton .enviar:hover {
       background-color: #d79d59; }
 
 @media (max-width: 320px) {
@@ -345,3 +348,52 @@ main .promociones {
 
 body {
   background-color: rgba(149, 166, 138, 0.5); }
+
+.contenedor-error .error {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 6rem;
+  font-weight: 600;
+  color: #6d823f; }
+
+.contenedor-error .e404 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .contenedor-error .e404 .pageE {
+    width: 25%;
+    padding-top: 20px; }
+
+.contenedor-error {
+  background: radial-gradient(#f2c48d, transparent); }
+  .contenedor-error .box-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenedor-error .box-error .error404 {
+      font-family: "Raleway", sans-serif;
+      font-size: 3rem;
+      font-weight: 600;
+      color: #6d823f; }
+
+.contenedor-error .e404 .box-error p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6d823f; }
+
+.contenedor-error .e404 .box-error .button-error {
+  background-color: #f2c48d;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  padding: 10px; }
+  .contenedor-error .e404 .box-error .button-error:hover {
+    background-color: #d79d59; }

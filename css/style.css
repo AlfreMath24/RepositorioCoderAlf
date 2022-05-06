@@ -3,32 +3,37 @@
   padding: 0;
   margin: 0; }
 
-nav .barra {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  nav .barra .item-1 {
-    padding: 10px 0px; }
-
 nav {
   background-color: #f2c48d;
   background: linear-gradient(to top, transparent, #f2c48d);
   padding: 10px 15px; }
-  nav ul {
-    list-style: none;
-    display: inline-block; }
-    nav ul li {
-      font-size: 1rem;
-      display: inline-block;
-      margin-right: 20px; }
-      nav ul li a {
-        text-decoration: none;
+  nav .nav-menu {
+    display: flex;
+    justify-content: space-between; }
+    nav .nav-menu ul {
+      display: flex;
+      margin-right: 40px;
+      list-style: none;
+      align-items: center; }
+      nav .nav-menu ul li .nav-link {
         color: black;
-        font-family: "Raleway", sans-serif; }
-        nav ul li a:hover {
-          font-weight: 600;
-          color: black; }
+        text-decoration: none;
+        font-family: "Raleway", sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        border-radius: 3px; }
+        nav .nav-menu ul li .nav-link:hover {
+          background-color: rgba(149, 166, 138, 0.5); }
+
+nav .nav-menu .logo {
+  padding: 20px 40px; }
+
+nav .logo .toggle {
+  color: black;
+  background: none;
+  border: none;
+  font-size: 30px;
+  display: none; }
 
 nav header {
   width: 100%; }
@@ -38,6 +43,33 @@ nav header {
 @media (max-width: 576px) {
   nav header img {
     height: 300px; } }
+
+@media (max-width: 576px) {
+  nav .nav-menu .menu {
+    flex-direction: column;
+    margin-right: 20px;
+    list-style: none;
+    align-items: center;
+    background-color: #6d823f;
+    position: auto;
+    left: 0;
+    top: 150px;
+    width: 100%; }
+    nav .nav-menu .menu .nav-link:hover {
+      color: #fff; } }
+
+@media (max-width: 576px) {
+  nav .nav-menu {
+    flex-direction: column; } }
+
+@media (max-width: 576px) {
+  nav .logo {
+    display: flex;
+    justify-content: space-between; } }
+
+@media (max-width: 576px) {
+  nav .logo .toggle {
+    display: block; } }
 
 footer {
   background-color: #f2c48d;

@@ -59,3 +59,74 @@ form{
 	margin-right: 100px;
 	margin-left: 100px;
 }
+
+.producto{
+	display: flex;
+	align-items: center;
+	.card-index{
+		padding: 10px 0px;
+		.card-title{
+			font-family: $fontMain;
+			font-size: $textlg;
+		}
+	}
+}
+
+.producto{
+	.card-index{
+		.card-text{
+			font-family: $fontMain;
+			font-size: $textsm;
+		}
+	}
+}
+
+.producto{
+	.card-index{
+		.card-body{
+			.card-img-top{
+				padding-bottom: 20px;
+			}
+		}
+	}
+}
+
+.producto{
+	.card-index{
+		.card-body{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			a{
+				width: 200px;
+				background-color: map-get($map:$paleta,$key:'tres');
+				box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+				border: none;
+				color: black;
+				&:hover{
+					background-color: map-get($map:$paleta,$key:'cuatro');
+				}	
+			}
+		}
+	}
+}
+
+.producto{
+	.card-index{
+		.card-title{
+			@media (max-width: 576px){
+				padding: 15px;
+			}
+		}
+	}
+}
+
+.producto{
+	.card-index{
+		.card-text{
+			@media (max-width: 576px){
+				padding: 30px;
+			}
+		}
+	}
+}

@@ -3,73 +3,44 @@
   padding: 0;
   margin: 0; }
 
+header .carousel-slide .carousel-inner .carousel-item .d-block {
+  width: 100%;
+  object-fit: contain;
+  padding-top: 10px; }
+
 nav {
   background-color: #f2c48d;
-  background: linear-gradient(to top, transparent, #f2c48d);
-  padding: 10px 15px; }
-  nav .nav-menu {
+  background: linear-gradient(#f2c48d, transparent);
+  padding: 10px 10px;
+  flex-direction: column; }
+  nav .container-fluid {
     display: flex;
-    justify-content: space-between; }
-    nav .nav-menu ul {
-      display: flex;
-      margin-right: 40px;
-      list-style: none;
-      align-items: center; }
-      nav .nav-menu ul li .nav-link {
-        color: black;
-        text-decoration: none;
-        font-family: "Raleway", sans-serif;
-        font-size: 1rem;
-        text-transform: uppercase;
-        border-radius: 3px; }
-        nav .nav-menu ul li .nav-link:hover {
-          background-color: rgba(149, 166, 138, 0.5); }
+    flex-direction: row; }
+    nav .container-fluid .logo {
+      padding: 20px; }
 
-nav .nav-menu .logo {
-  padding: 20px 40px; }
+nav .container-fluid .collapse {
+  justify-content: flex-end; }
+  nav .container-fluid .collapse .navbar-nav {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    padding: 20px; }
 
-nav .logo .toggle {
+nav .container-fluid .collapse .navbar-nav .nav-item:hover {
+  background-color: rgba(149, 166, 138, 0.5);
+  border-radius: 3px;
+  font-weight: 600; }
+
+nav .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   color: black;
-  background: none;
-  border: none;
-  font-size: 30px;
-  display: none; }
+  padding: 10px 20px; }
 
-nav header {
-  width: 100%; }
-  nav header img {
-    height: 450px; }
-
-@media (max-width: 576px) {
-  nav header img {
-    height: 300px; } }
-
-@media (max-width: 576px) {
-  nav .nav-menu .menu {
-    flex-direction: column;
-    margin-right: 20px;
-    list-style: none;
-    align-items: center;
-    background-color: #6d823f;
-    position: auto;
-    left: 0;
-    top: 150px;
-    width: 100%; }
-    nav .nav-menu .menu .nav-link:hover {
-      color: #fff; } }
-
-@media (max-width: 576px) {
-  nav .nav-menu {
-    flex-direction: column; } }
-
-@media (max-width: 576px) {
-  nav .logo {
-    display: flex;
-    justify-content: space-between; } }
-
-@media (max-width: 576px) {
-  nav .logo .toggle {
-    display: block; } }
+nav .container-fluid .navbar-toggler span {
+  color: black;
+  font-size: 2rem; }
+  nav .container-fluid .navbar-toggler span:hover {
+    background-color: rgba(149, 166, 138, 0.5);
+    padding: 10px; }
 
 footer {
   background-color: #f2c48d;
@@ -137,6 +108,43 @@ form {
   margin-right: 100px;
   margin-left: 100px; }
 
+.producto {
+  display: flex;
+  align-items: center; }
+  .producto .card-index {
+    padding: 10px 0px; }
+    .producto .card-index .card-title {
+      font-family: "Raleway", sans-serif;
+      font-size: 3rem; }
+
+.producto .card-index .card-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem; }
+
+.producto .card-index .card-body .card-img-top {
+  padding-bottom: 20px; }
+
+.producto .card-index .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .producto .card-index .card-body a {
+    width: 200px;
+    background-color: #f2c48d;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    border: none;
+    color: black; }
+    .producto .card-index .card-body a:hover {
+      background-color: #d79d59; }
+
+@media (max-width: 576px) {
+  .producto .card-index .card-title {
+    padding: 15px; } }
+
+@media (max-width: 576px) {
+  .producto .card-index .card-text {
+    padding: 30px; } }
+
 main {
   background-color: rgba(109, 130, 63, 0.7); }
   main h1 {
@@ -164,12 +172,12 @@ main {
   main .contenedor .card {
     width: 10rem; } }
 
-@media (max-width: 320px) {
+@media (max-width: 510px) {
   main .contenedor .card {
     width: 15rem;
     margin-top: 10px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 510px) {
   main .contenedor {
     display: flex;
     flex-direction: column;

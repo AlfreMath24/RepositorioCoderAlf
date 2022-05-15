@@ -47,7 +47,7 @@ main{
 main{
 	.contenedor{
 		.card{
-			@media (max-width: 320px){
+			@media (max-width: 510px){
 				width: 15rem;
 				margin-top: 10px;
 			}
@@ -58,7 +58,7 @@ main{
 
 main{
 	.contenedor{
-		@media (max-width: 320px){
+		@media (max-width: 510px){
 			display: flex;
 			flex-direction: column;
 			align-items: center;		
